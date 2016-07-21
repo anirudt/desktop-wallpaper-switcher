@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Total number of lines in our text file
-total_num=$(wc -l ~/Projects/small_projects/desktop-switcher/vim-cmds.txt | awk '{print $1;}')
+total_num=$(wc -l $1 | awk '{print $1;}')
 
 # Randomizer
 num=$(($RANDOM%122+1))
 echo $total_num
 
 # Getting a line of text to be printed, determined by the randomizer
-text=$(head -n $num ~/Projects/small_projects/desktop-switcher/vim-cmds.txt | tail -n 1)
+text=$(head -n $num $1 | tail -n 1)
 echo $text
 
 # Making an image out of the text using ImageMagick
