@@ -6,3 +6,5 @@ Fill in a text file, with each quote/tip/trick on a separate line, and pass it a
 
 #Screenshots:
 Works wonderfully in DWM.
+
+!["Example 1"](imgs/screen1.png?raw=true)
